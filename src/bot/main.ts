@@ -196,6 +196,7 @@ router.get("/send/:id", async (req: Request, res: Response) => {
 
     if (!hook) return res.status(404).json({ status: "404", content: "Unknown Webhook" });
     if (hook.locked) return res.status(403).json({ status: "403", content: "Webhook has been locked", msg: "This endpoint is provied via FastHook, if you suspect any suspicious activity please contact me @n3wtron (.gg/p5sZpNrtfB)" });
+    return res.status(200).json({ owner: hook.discordName, discordID: hook.discordID, msg: "This endpoint is provied via FastHook, if you suspect suspicious activity please contact me @n3wtron (.gg/p5sZpNrtfB)" });
 });
 
 // shit
