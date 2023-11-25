@@ -1,5 +1,4 @@
 # FastHook-FOSS-
-![fhook logo](https://github.com/new1479/FastHook-FOSS/assets/93484868/16bd5a3b-3124-4b60-b5d1-c23db230de83)
 
 Free webhook proxy written in typescript.
 This one of many of my self hosting projects.
